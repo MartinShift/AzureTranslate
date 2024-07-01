@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Translate";
+    var languages = new Dictionary<string, string>
+                    {
+                        { "en", "English" },
+                        { "es", "Spanish" },
+                        { "fr", "French" },
+                        { "de", "German" },
+                        { "it", "Italian" },
+                        { "uk", "Ukraine"},
+                        { "zh-Hans", "Chinese Simplified" },
+                        { "zh-Hant", "Chinese Traditional" },
+                        { "ja", "Japanese" },
+                        { "ko", "Korean"},
+                        { "pt", "Portuguese" },
+                        { "ar", "Arabic" },
+                        { "tr", "Turkish" },
+                        { "pl", "Polish" },
+                        { "nl", "Dutch" },
+                        { "cs", "Czech" },
+                        { "sk", "Slovak" },
+                    };
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>@ViewData["Title"]</h2>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Translate Text</h3>
+                <form id="textTranslateForm">
+                    <div class="form-group">
+                        <label for="text">Text to Translate</label>
+                        <textarea class="form-control" id="text" name="text" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="targetLanguageText">Target Language</label>
+                        <select class="form-control" id="targetLanguageText" name="targetLanguage">
+                            @{
+                                foreach (var language in languages)
+                                {
+                                    <option value="@language.Key">@language.Value</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="translateText()">Translate</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Upload Image for Translation</h3>
+                <form id="imageTranslateForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="Image">Select image:</label>
+                        <input type="file" class="form-control-file" id="Image" name="Image" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="targetLanguageImage">Select Target Language:</label>
+                        <select class="form-control" id="targetLanguageImage" name="targetLanguage">
+                            @{
+                                foreach (var language in languages)
+                                {
+                                    <option value="@language.Key">@language.Value</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="translateImage()">Translate Image</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <h4>Translation Result:</h4>
+                <div id="translationResult" class="border p-2"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function translateText() {
+            const formData = new FormData(document.getElementById('textTranslateForm'));
+            fetch('/translateText', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json()) 
+                .then(data => {
+                    const texts = data.map(item => item.translations.map(t => t.text).join('\n')).join('\n');
+                    document.getElementById('translationResult').innerText = texts;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function translateImage() {
+            const formData = new FormData(document.getElementById('imageTranslateForm'));
+            fetch('/translateImage', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json()) 
+                .then(data => {
+                    const texts = data.map(item => item.translations.map(t => t.text).join('\n')).join('\n');
+                    document.getElementById('translationResult').innerText = texts;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

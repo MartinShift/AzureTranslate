@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\git-repos\\AzureTranslate\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D03AAFA-126D-4744-81CD-FD9440895FB4}|AzureTranslate\\AzureTranslate.csproj|d:\\git-repos\\azuretranslate\\azuretranslate\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D03AAFA-126D-4744-81CD-FD9440895FB4}|AzureTranslate\\AzureTranslate.csproj|solutionrelative:azuretranslate\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D03AAFA-126D-4744-81CD-FD9440895FB4}|AzureTranslate\\AzureTranslate.csproj|d:\\git-repos\\azuretranslate\\azuretranslate\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D03AAFA-126D-4744-81CD-FD9440895FB4}|AzureTranslate\\AzureTranslate.csproj|solutionrelative:azuretranslate\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D03AAFA-126D-4744-81CD-FD9440895FB4}|AzureTranslate\\AzureTranslate.csproj|d:\\git-repos\\azuretranslate\\azuretranslate\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D03AAFA-126D-4744-81CD-FD9440895FB4}|AzureTranslate\\AzureTranslate.csproj|solutionrelative:azuretranslate\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D03AAFA-126D-4744-81CD-FD9440895FB4}|AzureTranslate\\AzureTranslate.csproj|d:\\git-repos\\azuretranslate\\azuretranslate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D03AAFA-126D-4744-81CD-FD9440895FB4}|AzureTranslate\\AzureTranslate.csproj|solutionrelative:azuretranslate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\git-repos\\AzureTranslate\\AzureTranslate\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AzureTranslate\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\git-repos\\AzureTranslate\\AzureTranslate\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AzureTranslate\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAD0AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T18:17:31.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\git-repos\\AzureTranslate\\AzureTranslate\\Program.cs",
+              "RelativeDocumentMoniker": "AzureTranslate\\Program.cs",
+              "ToolTip": "D:\\git-repos\\AzureTranslate\\AzureTranslate\\Program.cs",
+              "RelativeToolTip": "AzureTranslate\\Program.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T18:04:05.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\git-repos\\AzureTranslate\\AzureTranslate\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AzureTranslate\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\git-repos\\AzureTranslate\\AzureTranslate\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AzureTranslate\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAACcAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-01T18:02:02.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\git-repos\\AzureTranslate\\AzureTranslate\\appsettings.json",
+              "RelativeDocumentMoniker": "AzureTranslate\\appsettings.json",
+              "ToolTip": "D:\\git-repos\\AzureTranslate\\AzureTranslate\\appsettings.json",
+              "RelativeToolTip": "AzureTranslate\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-01T18:01:59.959Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
